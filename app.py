@@ -2,7 +2,7 @@ from flask import Flask
 from pymongo import MongoClient
 import random
 app = Flask(__name__)
-client = MongoClient('172.19.0.2',27017)
+client = MongoClient('mongodb')
 db=client['datas']
 
 @app.route('/')
